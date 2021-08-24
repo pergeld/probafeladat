@@ -1,0 +1,173 @@
+$red-color: #C32548;
+$red-hover-color: #97192A;
+$add-btn-color: #EBAC51;
+$add-btn-hover:#CA8317;
+$save-btn: #31C261;
+$save-btn-hover: #409F44;
+$edit-btn-color: #187bcd;
+
+.main_div {
+    margin: 0 auto;
+    padding-top: 18px;
+    width: 100%;
+}
+
+.title_text {
+    color: $red-color;
+    font-size: 24px;
+    padding-top: 12px;
+    padding-bottom: 24px;
+}
+
+.main_table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+
+    td, th {
+        border: 1px solid #DDD;
+        padding: 8px;
+        vertical-align: center;
+    }
+
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border: 1px solid #EEE;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.second_table {
+    border-collapse: separate;
+    border-spacing: 0 6px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    margin-top: 12px;
+}
+
+.add_btn_container {
+    margin: 32px 0px 32px 0px;
+
+    button {
+        border: none;
+        padding: 6px 12px;
+    }
+
+    .add_btn {
+        color: #fff;
+        background: $add-btn-color;
+        padding: 6px 12px;
+        text-decoration: none;
+
+        &:hover {
+            background: $add-btn-hover;
+            text-decoration: none;
+            transition: background-color 0.5s ease;
+        }
+
+        &:focus {
+            text-decoration: none;
+        }
+    }
+}
+
+.form_elements {
+    width: 100%;
+    box-sizing: border-box;
+
+    input[type=text], input[type=email], select, textarea {
+        width: 100%;
+        padding: 6px;
+        border: 1px solid #ccc;
+    }
+
+    .col-20 {
+        float: left;
+        text-align: left;
+        width: 20%;
+        margin-top: 10px;
+    }
+
+    .col-80 {
+        float: left;
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .form_element:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.search_div {
+    margin-bottom: 12px;
+    
+    select {
+        width: 20%;
+    }
+}
+
+.save_btn {
+    color: #fff;
+    background: $add-btn-color;
+    padding: 6px 12px;
+    text-decoration: none;
+    margin-left: 8px;
+
+    &:hover {
+        background: $add-btn-hover;
+        text-decoration: none;
+        transition: background-color 0.5s ease;
+    }
+
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.back_btn {
+    color: #fff;
+    background: $red-color;
+    padding: 6px 12px;
+    text-decoration: none;
+
+    &:hover {
+        background: $red-hover-color;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.5s ease;
+    }
+
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.edit_btn {
+    color: $edit-btn-color;
+
+    &:hover {
+        color: $edit-btn-color;
+    }
+
+    &:focus {
+        color: $edit-btn-color;
+    }
+}
+
+.delete_btn {
+    color: $red-hover-color;
+
+    &:hover {
+        color: $red-hover-color;
+    }
+
+    &:focus {
+        color: $red-hover-color;
+    }
+}
